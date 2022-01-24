@@ -1,0 +1,14 @@
+Các kiểu JOIN:
+Cách khớp nối bảng ở trên (sử dụng điều kiện khớp nối ở mệnh đề where) sử dụng với khớp nối thông thường, thực tế SQL sử dụng từ khóa join với nhiều cách kết nối bảng khách nhau. Gồm có:
+
+    inner join : trả về các bản ghi có giá trị phù hợp giữa hai bảng (nhớ lại phép giao hai tập hợp).
+    left join : mọi bản ghi bảng bên trái được trả về, bản ghi nào phù hợp với bản ghi bên phải thì nó được bổ sung thêm dữ liệu từ bản ghi bảng bên phải (nếu không có thì nhận NULL)
+    right join : mọi bản ghi bảng bên phải được trả về, sau bổ sung dữ liệu phù hợp từ bảng bên trái.
+    outer join : (full join) mọi bản ghi ở bảng trái và bảng phải kết hợp lại
+
+Quy tắc chung viết join: bảng trái là bảng nằm bên trái (phía trước) từ khóa join, bảng phái là bảng sau (bên phải) từ khóa join, trong mệnh đề join thì điều kiện kết hợp viết sau từ khóa on
+
+Sử dụng INNER JOIN
+Xem lại hình ảnh về Inner Join, nó giống với phép toán giao tập hợp.
+
+inner join chọn các bản ghi mà phải phù hợp ở tất cả các bảng
